@@ -56,7 +56,7 @@ namespace SeleniumTests
             driver.FindElement(By.Id("LastName")).SendKeys("Ivanković");
             driver.FindElement(By.Id("Email")).Click();
             driver.FindElement(By.Id("Email")).Clear();
-            driver.FindElement(By.Id("Email")).SendKeys("ivan9@gmail.com");
+            driver.FindElement(By.Id("Email")).SendKeys("ivan"+ number+"@gmail.com");
             driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::div[1]")).Click();
             driver.FindElement(By.Id("Password")).Click();
             driver.FindElement(By.Id("Password")).Clear();
